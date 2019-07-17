@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sally's Resume</title>
+    </head>
+    <body>
+        <div id="application-root"></div>
+
+        <script
+            src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+        <script
+            src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+        <script
+            src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+
+        <script type="text/babel">
+// App Component
+function App(props) {
+  return (
+    <div>
+    <header>
+      {props.children}
+    </header>
+    <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Ilana from Broad City"/>
+    <h1>Sally Student</h1>
+    <address>
+      <a href="mailto:sallystudent@gmail.com?subject=Interested In Hiring You!">Sallystudent@gmail.com</a><br/>
+ (212-222-2222)<br/>
+</address>
+<main>
+  <section id="Education-content">
+<h2>Education</h2>
+<ul>
+  <li><b>New York University, <em> September 2000 - June 2014</em></b></li>
+</ul>
+  </section>
+  <section id="Employment-content">
+<h2>Employment History</h2>
+<ul>
+  <li><b>Richard Newman,<em> August 2014 - October 2016</em></b>
+  <p>- Strong working knowledge with interactive languages and tools such as HTML, CSS, Javascript, etc.<br/>- Familiarity with social media utilities such as Facebook, Instagram, Twitter, Google+, YouTube, LinkedIn, Pinterest, etc.</p></li>
+  <li><b>CertiX, <em> October 2016 - Present</em></b><p>- Proficient in front-end tech stacks like Javascript/HTML/CSS and frameworks like reactjs/vuejs/jquery<br/>- Fast paced programming mentality with quick turnaround; Strong and creative problem solving skills; always willing to embrace new technologies and collaborate</p></li>
+</ul>
+  </section>
+</main>
+</div>
+  );
+};
+
+// Nested elements inside the App
+ReactDOM.render(
+  <App className='my-class'/>,
+  document.querySelector('#application-root')
+);
+</script>
+    </body>
+</html>
